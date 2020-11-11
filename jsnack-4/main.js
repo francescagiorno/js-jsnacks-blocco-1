@@ -26,11 +26,11 @@ var squadra = [
 /*Generare numeri random al posto degli 0 nelle proprietà:
 punti fatti e falli subiti*/
 
-for( i = 0; i < squadra.lenght; i++){
+for(  var i = 0; i < squadra.length; i++){
   randomNumbOne =  Math.floor(Math.random() * 100);
   randomNumbTwo = Math.floor(Math.random() * 100);
-  squadra.falliSubiti = randomNumbOne;
-  squadra.puntiFatti =  randomNumbTwo;
+  squadra[i].falliSubiti = randomNumbOne;
+  squadra[i].puntiFatti =  randomNumbTwo;
 }
 
 
